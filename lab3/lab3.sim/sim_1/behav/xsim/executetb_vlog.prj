@@ -1,0 +1,16 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../lab3.srcs/sources_1/new/add.v" \
+"../../../../lab3.srcs/sources_1/new/alu.v" \
+"../../../../lab3.srcs/sources_1/new/alu_control.v" \
+"../../../../lab3.srcs/sources_1/new/final_EX_stage.v" \
+"../../../../lab3.srcs/sources_1/new/latch.v" \
+"../../../../lab3.srcs/sources_1/new/mux32bit.v" \
+"../../../../lab3.srcs/sources_1/new/mux5bit.v" \
+"../../../../lab3.srcs/sim_1/new/executetb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

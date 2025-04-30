@@ -1,0 +1,25 @@
+Vivado Simulator v2024.2.0
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: /home/jinyeobo/Documents/Vivado/2024.2/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot executetb_behav xil_defaultlib.executetb xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 3 for port 'ctlm_in' [/home/jinyeobo/4300/lab3/lab3.srcs/sim_1/new/executetb.v:40]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 3 for port 'ctlm_out' [/home/jinyeobo/4300/lab3/lab3.srcs/sim_1/new/executetb.v:52]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "/home/jinyeobo/4300/lab3/lab3.srcs/sources_1/new/add.v" Line 1. Module add doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/jinyeobo/4300/lab3/lab3.srcs/sources_1/new/add.v" Line 1. Module add doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.add
+Compiling module xil_defaultlib.mux32bit
+Compiling module xil_defaultlib.alu_control
+Compiling module xil_defaultlib.alu
+Compiling module xil_defaultlib.mux5bit
+Compiling module xil_defaultlib.latch
+Compiling module xil_defaultlib.final_ex
+Compiling module xil_defaultlib.executetb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot executetb_behav

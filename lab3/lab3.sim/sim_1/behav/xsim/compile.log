@@ -1,0 +1,16 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jinyeobo/4300/lab3/lab3.srcs/sources_1/new/add.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module add
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jinyeobo/4300/lab3/lab3.srcs/sources_1/new/alu.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jinyeobo/4300/lab3/lab3.srcs/sources_1/new/alu_control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module alu_control
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jinyeobo/4300/lab3/lab3.srcs/sources_1/new/final_EX_stage.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module final_ex
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jinyeobo/4300/lab3/lab3.srcs/sources_1/new/latch.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module latch
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jinyeobo/4300/lab3/lab3.srcs/sources_1/new/mux32bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux32bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jinyeobo/4300/lab3/lab3.srcs/sources_1/new/mux5bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux5bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/jinyeobo/4300/lab3/lab3.srcs/sim_1/new/executetb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module executetb
