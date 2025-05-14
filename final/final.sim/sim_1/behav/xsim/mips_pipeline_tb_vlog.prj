@@ -1,0 +1,32 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../../lab3/lab3.srcs/sources_1/new/add.v" \
+"../../../../../lab1/adder.v" \
+"../../../../../lab3/lab3.srcs/sources_1/new/alu.v" \
+"../../../../../lab3/lab3.srcs/sources_1/new/alu_control.v" \
+"../../../../../lab4/lab4.srcs/sources_1/new/and.v" \
+"../../../../../lab2/lab2.srcs/sources_1/new/control.v" \
+"../../../../../lab4/lab4.srcs/sources_1/new/data_mem.v" \
+"../../../../../lab4/lab4.srcs/sources_1/new/dmem_latch.v" \
+"../../../../../lab3/lab3.srcs/sources_1/new/final_EX_stage.v" \
+"../../../../../lab2/lab2.srcs/sources_1/new/final_id_stage.v" \
+"../../../../../lab1/if_id.v" \
+"../../../../../lab1/instruction_fetch.v" \
+"../../../../../lab2/lab2.srcs/sources_1/new/latch.v" \
+"../../../../../lab3/lab3.srcs/sources_1/new/latch.v" \
+"../../../../../lab1/memory.v" \
+"../../../../../lab4/lab4.srcs/sources_1/new/memory.v" \
+"../../../../../lab1/mux.v" \
+"../../../../../lab3/lab3.srcs/sources_1/new/mux32bit.v" \
+"../../../../../lab3/lab3.srcs/sources_1/new/mux5bit.v" \
+"../../../../../lab1/pc.v" \
+"../../../../../lab2/lab2.srcs/sources_1/new/register.v" \
+"../../../../../lab2/lab2.srcs/sources_1/new/sign_extend.v" \
+"../../../../final.srcs/sources_1/new/pipeline.v" \
+"../../../../final.srcs/sim_1/new/pipelinetb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
