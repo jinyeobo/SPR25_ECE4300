@@ -11,12 +11,13 @@ module final_ex(
     output [1:0] ctlwb_out,
     output [2:0] ctlm_out,
     output [31:0] adder_out, alu_result_out, rdata2out,
-    output [4:0] muxout_out
+    output [4:0] muxout_out,
+    output aluzero_out
 );
     // wires to connect internal modules
     wire [31:0] adder_result, alu_in2, alu_result;
     wire [2:0] alu_ctrl;
-    wire alu_zero;
+    wire aluzero;
     wire [4:0] regdst_muxout;
     
     // module instances and connections
@@ -41,7 +42,7 @@ module final_ex(
     
     alu alu_inst(
         .result(alu_result),
-        .zero(alu_zero),
+        .zero(aluzero),
         .a(rdata1),
         .b(alu_in2),
         .control(alu_ctrl)
@@ -61,13 +62,15 @@ module final_ex(
         .adder_out(adder_result),
         .aluout(alu_result),      // Changed from undeclared 'aluout'
         .readdat2(rdata2),
+        .aluzero(aluzero),
         .muxout(regdst_muxout),   // Changed to use internal wire
         .wb_ctlout(ctlwb_out),
         .m_ctlout(ctlm_out),
         .addresult(adder_out),
         .alu_result(alu_result_out),
         .rdata2out(rdata2out),
-        .five_bit_muxout(muxout_out)
+        .five_bit_muxout(muxout_out),
+        .aluzero_out(aluzero_out)
     );
     
 endmodule

@@ -42,33 +42,19 @@ module final_ID_stage(
 
 // Control unit wires
 wire [8:0] control_out;
-//wire [1:0] alu_op;
-//wire reg_dst, alu_src, branch, mem_read, mem_write, mem_to_reg, reg_write;
 wire [31:0] reg_rs_in, reg_rt_in, sign_ext_in;
-wire [4:0] rt_in, rd_in;
+reg [4:0] rt_in, rd_in;
 
-assign rt_in = instr[15:11];
-assign rd_in = instr[20:16];
+always @(instr) begin
+    rt_in <= instr[15:11];
+    rd_in <= instr[20:16];
+end
 
 // Instantiate control unit
 control ctrl(
     .opcode(instr[31:26]),
     .control_out(control_out)
-//    .alu_op(alu_op),
-//    .reg_dst(reg_dst),
-//    .alu_src(alu_src),
-//    .branch(branch),
-//    .mem_read(mem_read),
-//    .mem_write(mem_write),
-//    .reg_write(reg_write),
-//    .mem_to_reg(mem_to_reg)
 );
-
-
-//// Combine control bits
-//assign control_bits = control_out;
-//assign control_bits = {reg_dst, alu_src, mem_to_reg, reg_write, 
-//                      mem_read, mem_write, branch, alu_op};
 
 // Instantiate register file
 register reg_file(

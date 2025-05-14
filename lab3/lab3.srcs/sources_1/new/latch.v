@@ -6,13 +6,15 @@ module latch(
     input [31:0] aluout,
     input [31:0] readdat2,
     input [4:0] muxout,
+    input aluzero,
     
     output reg [1:0] wb_ctlout,
     output reg [2:0] m_ctlout,
     output reg [31:0] addresult,
     output reg [31:0] alu_result,
     output reg [31:0] rdata2out,
-    output reg [4:0] five_bit_muxout    
+    output reg [4:0] five_bit_muxout,   
+    output reg aluzero_out
 );
     always @(posedge clk) begin
         wb_ctlout <= ctlwb_out;
@@ -21,6 +23,7 @@ module latch(
         alu_result <= aluout;
         rdata2out <= readdat2;
         five_bit_muxout <= muxout;
+        aluzero_out <= aluzero;
         
     end
 endmodule

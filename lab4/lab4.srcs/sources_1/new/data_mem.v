@@ -28,6 +28,13 @@ module data_mem(
 
     // Memory array (256 words as specified in Lab 4)
     reg [31:0] memory [0:255];
+    integer i;
+    
+    initial begin
+        $readmemb("data.txt", memory);
+        for (i = 0; i < 6; i = i + 1)
+            $display(memory[i]);
+    end
 
     // Memory read operation (combinational)
     always @(*) begin

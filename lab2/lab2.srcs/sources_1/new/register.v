@@ -38,10 +38,11 @@ module register(
 );
     
     reg [31:0] reg_file [0:31];
+    integer i;
     
     initial begin
         // Initialize all registers to 0
-        for (integer i = 0; i < 32; i = i + 1)
+        for (i = 0; i < 32; i = i + 1)
             reg_file[i] = 32'b0;
             
         // Initialize some registers with test values from Lab 2

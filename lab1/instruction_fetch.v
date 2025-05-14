@@ -10,7 +10,7 @@ module i_fetch(
     wire [31:0] dataout; // Declare as wire
     wire [31:0] npc, npc_mux; // Declare as wire
 
-    mux mux1(.a(EX_MEM_NPC), .b(npc), .sel(EX_MEM_PCsrc), .y(npc_mux));
+    mux32 mux1(.a(EX_MEM_NPC), .b(npc), .sel(EX_MEM_PCsrc), .y(npc_mux));
 
     program_counter program_counter1(.clk(clk), .reset(reset), .PC(PC), .npc(npc_mux)); // Fix port names
 
